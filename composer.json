@@ -1,5 +1,5 @@
 {
-    "name": "shardj/zf1-extras-future",
+    "name": "pcr/zf1-extras-future",
     "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible",
     "type": "library",
     "keywords": [
@@ -8,9 +8,13 @@
     ],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packages.pcr.com"
+    }],
     "require": {
         "php": ">=5.2.11",
-        "zendframework/zendframework1": "1.12.*"
+        "pcr/zf1-future": "@dev"
     },
     "autoload": {
         "psr-0": {
@@ -26,6 +30,7 @@
         }
     },
     "replace": {
-        "zendframework/zf1-extras": "1.*"
+        "zendframework/zf1-extras": "1.*",
+        "shardj/zf1-extras-future": "*"
     }
 }
