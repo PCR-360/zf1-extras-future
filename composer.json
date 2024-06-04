@@ -2,19 +2,26 @@
     "name": "pcr/zf1-extras-future",
     "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible",
     "type": "library",
+    "version": "24.2.0",
     "keywords": [
         "framework",
         "zf1"
     ],
     "homepage": "http://framework.zend.com/",
     "license": "BSD-3-Clause",
-    "repositories": [{
-        "type": "composer",
-        "url": "https://packages.pcr.com"
-    }],
+    "repositories": [
+        {
+            "url": "https://github.com/PCR-360/zf1-future",
+            "type": "git"
+        },
+        {
+            "type": "composer",
+            "url": "https://packages.pcr.com"
+        }
+    ],
     "require": {
         "php": ">=5.2.11",
-        "pcr/zf1-future": "dev-master"
+        "pcr/zf1-future": "^24.2.0"
     },
     "autoload": {
         "psr-0": {
@@ -26,7 +33,8 @@
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.12.x-dev"
+            "dev-master": "1.12.x-dev",
+            "dev-PCR360-11213-PHP8.3-support": "24.2.x-dev"
         }
     },
     "replace": {
