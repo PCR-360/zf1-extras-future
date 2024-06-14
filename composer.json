@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=5.2.11",
-        "pcr/zf1-future": "^24.2.0"
+        "pcr/zf1-future": "dev-test"
     },
     "autoload": {
         "psr-0": {
