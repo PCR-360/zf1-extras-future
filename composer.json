@@ -1,8 +1,8 @@
 {
     "name": "pcr/zf1-extras-future",
-    "description": "Zend Framework 1 Extras PHP 7.2 and 7.3 compatible",
+    "description": "Zend Framework 1 Extras The aim is to keep ZF1 Extras working with the latest PHP versions",
     "type": "library",
-    "version": "24.2.0",
+    "version": "24.2.1",
     "keywords": [
         "framework",
         "zf1"
@@ -21,7 +21,7 @@
     ],
     "require": {
         "php": ">=5.2.11",
-        "pcr/zf1-future": "^24.2.0"
+        "pcr/zf1-future": "^24.2.2"
     },
     "autoload": {
         "psr-0": {
@@ -33,8 +33,7 @@
     ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.12.x-dev",
-            "dev-PCR360-11213-PHP8.3-support": "24.2.x-dev"
+            "dev-master": "1.12.x-dev"
         }
     },
     "replace": {

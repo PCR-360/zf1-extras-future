@@ -610,7 +610,11 @@ abstract class ZendX_Console_Process_Unix
      */
     private function _createIpcSegment()
     {
-        $this->_ipcSegFile = realpath(sys_get_temp_dir()) . '/' . rand() . $this->_name . '.shm';
+        // Only use sys_get_temp_dir() if APP_TEMP_DIR is undefined
+        $this->_ipcSegFile = realpath(
+                rtrim(defined('APP_TEMP_DIR') ? APP_TEMP_DIR : sys_get_temp_dir(), '/')
+            )
+            . '/' . rand() . $this->_name . '.shm';
         touch($this->_ipcSegFile);
 
         $shmKey = ftok($this->_ipcSegFile, 't');
