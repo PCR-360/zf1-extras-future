@@ -162,6 +162,7 @@ abstract class ZendX_Console_Process_Unix
     
         $this->_isRunning = false;
 
+        // md5() usage is safe -- only used to create unique identifier.
         $this->_name = md5(uniqid(rand()));
         $this->_guid = $guid;
         $this->_puid = $puid;
